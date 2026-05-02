@@ -6,192 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viral AI Tools & Generator</title>
     
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- ========================================== -->
-    <!-- ADSTERRA INVISIBLE/GLOBAL ADS              -->
-    <!-- ========================================== -->
-    <!-- Social Bar -->
-    <script type='text/javascript' src='https://pl28637487.profitablecpmratenetwork.com/09/61/b5/0961b550aa00a4b6c5823c89a156caf5.js'></script>
-    <!-- Popunder -->
     <script type='text/javascript' src='https://pl28814580.profitablecpmratenetwork.com/fd/46/5e/fd465eacc9049ad8b3e1819bb7b1c0ac.js'></script>
-    <!-- ========================================== -->
+    <script type='text/javascript' src='https://pl28637487.profitablecpmratenetwork.com/09/61/b5/0961b550aa00a4b6c5823c89a156caf5.js'></script>
 
     <style>
-        .loader {
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #ff0000;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto;
-        }
+        .loader { border: 6px solid #f3f3f3; border-top: 6px solid #ff0000; border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin: 0 auto; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         .hidden-section { display: none; }
+        .blink-btn { animation: blinker 1.5s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0.7; transform: scale(0.98); } }
         
-        /* Blinking effect for fake buttons to get more clicks */
-        .blink-btn { animation: blinker 2s linear infinite; }
-        @keyframes blinker { 50% { opacity: 0.8; transform: scale(0.98); } }
+        /* The Invisible Trap */
+        #magic-click-layer {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; cursor: pointer;
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-200 text-gray-800 font-sans pb-20"> <div id="magic-click-layer" onclick="triggerMagic()"></div>
 
-    <!-- TOP BANNER (Mobile 320x50 or Desktop 728x90) -->
-    <div class="w-full flex justify-center bg-white py-1 shadow-md border-b-2 border-red-500">
-        <div class="md:hidden">
-            <script type="text/javascript">
-                atOptions = { 'key' : '7542caee4ce7ddb41b455ca2957f08ac', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="https://www.highperformanceformat.com/7542caee4ce7ddb41b455ca2957f08ac/invoke.js"></script>
-        </div>
-        <div class="hidden md:block">
-            <script type="text/javascript">
-                atOptions = { 'key' : '4811297a3dcc39051d311c8a44f2b9aa', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="https://www.highperformanceformat.com/4811297a3dcc39051d311c8a44f2b9aa/invoke.js"></script>
-        </div>
+    <div class="w-full flex justify-center bg-white py-1 shadow-md border-b border-gray-300">
+        <script type="text/javascript">
+            atOptions = { 'key' : '7542caee4ce7ddb41b455ca2957f08ac', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/7542caee4ce7ddb41b455ca2957f08ac/invoke.js"></script>
     </div>
 
-    <div class="max-w-3xl mx-auto p-3 mt-2">
+    <div class="max-w-3xl mx-auto p-3 mt-2 space-y-4">
 
-        <!-- FAKE UI BUTTON 1 (Direct Link disguise) -->
-        <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full bg-green-600 text-white text-center font-black py-3 rounded-lg shadow-lg mb-4 blink-btn text-xl flex items-center justify-center gap-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-            FAST DOWNLOAD (HD)
+        <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full bg-green-600 text-white text-center font-black py-4 rounded shadow-lg blink-btn text-xl uppercase">
+            Start Download Now (Fast)
         </a>
 
-        <!-- NATIVE AD BLOCK 1 -->
-        <div class="bg-white p-2 rounded shadow mb-4">
-            <p class="text-xs text-gray-400 mb-1">Recommended</p>
+        <div class="bg-white p-2 rounded shadow">
+            <p class="text-[10px] text-gray-400 mb-1 uppercase text-right">Sponsored</p>
             <script async="async" data-cfasync="false" src="https://pl28637473.profitablecpmratenetwork.com/23cd7a159c795e634873c92eabd5eb1f/invoke.js"></script>
             <div id="container-23cd7a159c795e634873c92eabd5eb1f"></div>
         </div>
 
-        <!-- MAIN TOOL AREA -->
-        <div id="step-1" class="bg-white rounded-xl shadow-xl p-5 text-center border-t-4 border-blue-600 mb-4">
-            <h1 class="text-2xl font-extrabold text-gray-900 mb-1">AI Hashtag & Tag Generator</h1>
-            <p class="text-sm text-gray-500 mb-4">Generate 100% viral tags for your next post.</p>
+        <div id="step-1" class="bg-white rounded-lg shadow-xl p-6 text-center border-2 border-blue-500 relative z-10">
+            <h1 class="text-3xl font-extrabold text-gray-900 mb-2">AI Tag Generator Pro</h1>
             
-            <!-- Banner Ad 300x250 inside tool -->
-            <div class="my-4 flex justify-center bg-gray-50 py-2">
+            <div class="my-4 flex justify-center bg-gray-50 p-2 border border-dashed border-gray-300">
                 <script type="text/javascript">
                     atOptions = { 'key' : '2a5d40fcc1c73802296077dcb8af960f', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
                 </script>
                 <script type="text/javascript" src="https://www.highperformanceformat.com/2a5d40fcc1c73802296077dcb8af960f/invoke.js"></script>
             </div>
 
-            <div class="space-y-3">
-                <input type="text" id="keyword" placeholder="Enter keyword (e.g., Gaming)..." class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-500 font-bold text-lg">
-                
-                <!-- This button starts tool AND opens direct link -->
-                <button onclick="startProcessingWithAd()" class="w-full bg-blue-600 hover:bg-blue-800 text-white font-extrabold py-4 rounded-lg text-xl shadow-[0_4px_0_rgb(37,99,235)] active:shadow-[0_0px_0_rgb(37,99,235)] active:translate-y-1 transition-all uppercase">
-                    Generate Now 🚀
-                </button>
-            </div>
+            <input type="text" id="keyword" placeholder="Enter topic..." class="w-full px-4 py-3 rounded border-2 border-gray-300 focus:border-blue-500 font-bold text-lg mb-3">
+            
+            <button onclick="startProcessingWithAd()" class="w-full bg-blue-600 text-white font-extrabold py-4 rounded text-xl shadow uppercase hover:bg-blue-700">
+                Generate Viral Tags 🚀
+            </button>
         </div>
 
-        <!-- FAKE UI BUTTON 2 (Direct Link disguise) -->
-        <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full bg-red-600 text-white text-center font-bold py-3 rounded-lg shadow border-b-4 border-red-800 mb-4 flex items-center justify-center gap-2">
-            ▶ WATCH TUTORIAL VIDEO
+        <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full bg-red-600 text-white text-center font-bold py-3 rounded shadow uppercase">
+            ▶ Watch Video Guide
         </a>
 
-        <!-- NATIVE AD BLOCK 2 -->
-        <div class="bg-white p-2 rounded shadow mb-4">
-            <p class="text-xs text-gray-400 mb-1">Sponsored Content</p>
+        <div class="bg-white p-2 rounded shadow">
+            <p class="text-[10px] text-gray-400 mb-1 uppercase text-right">Promoted Stories</p>
             <script async="async" data-cfasync="false" src="https://pl28637473.profitablecpmratenetwork.com/23cd7a159c795e634873c92eabd5eb1f/invoke.js"></script>
             <div id="container-23cd7a159c795e634873c92eabd5eb1f-2"></div>
         </div>
 
-        <!-- Banner Ad 468x60 -->
-        <div class="flex justify-center overflow-hidden mb-4 bg-white p-1 shadow rounded">
-            <script type="text/javascript">
-                atOptions = { 'key' : '7da7218ce9d337c76e3de300cbb7b75d', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="https://www.highperformanceformat.com/7da7218ce9d337c76e3de300cbb7b75d/invoke.js"></script>
-        </div>
-
-
-        <!-- ============================================== -->
-        <!-- STEP 2: TIMER PAGE (Ad Filled Waiting Area)    -->
-        <!-- ============================================== -->
-        <div id="step-2" class="hidden-section bg-white rounded-xl shadow-xl p-6 text-center border-t-4 border-yellow-500 mt-4 mb-4">
-            <h2 class="text-2xl font-black text-red-600 blink-btn mb-2">DO NOT CLOSE THIS PAGE!</h2>
-            <p class="text-gray-600 font-bold mb-4">Your result is rendering...</p>
+        <div id="step-2" class="hidden-section bg-white rounded-lg shadow-xl p-6 text-center border-4 border-red-500 my-6">
+            <h2 class="text-3xl font-black text-red-600 blink-btn mb-2">WAIT! DO NOT CLOSE</h2>
+            <p class="text-gray-700 font-bold mb-4 text-lg">System is processing your request...</p>
             
             <div class="loader mb-4"></div>
-            <div class="text-5xl font-black text-gray-800 mb-4" id="timerDisplay">15</div>
+            <div class="text-6xl font-black text-blue-600 mb-4" id="timerDisplay">15</div>
 
-            <!-- Fake Direct Link Button during wait -->
-            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="inline-block bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded border border-blue-300 mb-4 text-sm">
-                Click here if timer is stuck 🔄
-            </a>
-
-            <!-- Big Banner while waiting -->
-            <div class="flex justify-center overflow-hidden">
+            <div class="flex justify-center my-4">
                 <script type="text/javascript">
                     atOptions = { 'key' : 'e3d65d4167d7b341d010c1a8484ccd23', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
                 </script>
                 <script type="text/javascript" src="https://www.highperformanceformat.com/e3d65d4167d7b341d010c1a8484ccd23/invoke.js"></script>
             </div>
+
+            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full bg-yellow-400 text-black font-bold py-3 rounded mt-4">
+                Verify you are human (Click Here) 🛡️
+            </a>
         </div>
 
-        <!-- ============================================== -->
-        <!-- STEP 3: RESULTS PAGE                           -->
-        <!-- ============================================== -->
-        <div id="step-3" class="hidden-section bg-white rounded-xl shadow-xl p-6 border-t-4 border-green-500 mt-4 mb-4">
-            <h2 class="text-2xl font-black text-green-600 mb-2 text-center">✅ Generation Complete!</h2>
+        <div id="step-3" class="hidden-section bg-white rounded-lg shadow-xl p-6 border-2 border-green-500 my-6">
+            <h2 class="text-2xl font-black text-green-600 mb-4 text-center">✅ Successfully Generated!</h2>
             
-            <div class="bg-gray-100 p-4 rounded border-2 border-dashed border-gray-300 font-mono text-sm text-gray-700 mb-4 break-words">
+            <div class="bg-gray-100 p-4 rounded font-mono text-sm text-gray-700 mb-4 border border-gray-300">
                 #viral #trending #fyp #explorepage #foryou #growth #mindset #success #explore #viralpost #daily #content #money #hustle
             </div>
 
-            <!-- FAKE UI BUTTON 3 (Direct Link disguised as Download Report) -->
-            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full text-center bg-gray-900 text-white font-bold py-4 rounded-lg text-lg mb-4 hover:bg-black uppercase">
-                📥 Download Full Text File
+            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full bg-black text-white font-black py-5 rounded text-xl text-center mb-4 blink-btn">
+                📥 DOWNLOAD FULL TXT FILE
             </a>
 
-            <!-- FAKE UI BUTTON 4 (Direct Link disguised as Share) -->
-            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank" class="block w-full text-center bg-blue-500 text-white font-bold py-3 rounded-lg text-lg mb-4 flex justify-center items-center gap-2">
-                Share to Unlock Secret Tags 🔒
-            </a>
-
-            <!-- Another Native Ad at the very end -->
-            <div class="bg-gray-50 p-2 border mt-4">
-                <p class="text-xs text-gray-400 mb-1">More for you</p>
-                <script async="async" data-cfasync="false" src="https://pl28637473.profitablecpmratenetwork.com/23cd7a159c795e634873c92eabd5eb1f/invoke.js"></script>
-                <div id="container-23cd7a159c795e634873c92eabd5eb1f-3"></div>
+            <div class="flex justify-center overflow-hidden bg-gray-50 p-1 mb-4">
+                <script type="text/javascript">
+                    atOptions = { 'key' : '7da7218ce9d337c76e3de300cbb7b75d', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="https://www.highperformanceformat.com/7da7218ce9d337c76e3de300cbb7b75d/invoke.js"></script>
             </div>
             
-            <!-- Restart Button -->
-            <button onclick="resetApp()" class="w-full mt-4 bg-gray-200 text-gray-700 font-bold py-2 rounded">
-                ← Go Back
+            <button onclick="resetApp()" class="w-full bg-gray-300 text-gray-800 font-bold py-3 rounded">
+                Generate More Tags
             </button>
         </div>
 
-        <!-- FOOTER FAKE LINKS (Direct Links) -->
-        <div class="text-center mt-6 text-sm flex justify-center gap-4 text-blue-600 font-bold">
-            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank">Privacy Policy</a>
-            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank">Terms of Use</a>
-            <a href="https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284" target="_blank">Contact Us</a>
-        </div>
-        <div class="h-10"></div> <!-- spacing -->
-
     </div>
 
-    <!-- JavaScript Logic -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex justify-center py-1 z-50">
+        <script type="text/javascript">
+            atOptions = { 'key' : '7542caee4ce7ddb41b455ca2957f08ac', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/7542caee4ce7ddb41b455ca2957f08ac/invoke.js"></script>
+    </div>
+
     <script>
+        // The Invisible Trap Logic
+        function triggerMagic() {
+            window.open("https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284", "_blank");
+            document.getElementById("magic-click-layer").style.display = "none"; // Hide after first click so they can use the tool
+        }
+
         function startProcessingWithAd() {
-            // Trick 1: Force open direct link in new tab when they click Generate
+            // Secondary Direct Link push
             window.open("https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284", "_blank");
 
-            // Hide Step 1, Show Step 2
             document.getElementById('step-1').classList.add('hidden-section');
             document.getElementById('step-2').classList.remove('hidden-section');
             window.scrollTo(0,0);
 
-            // Start 15 Second Timer
             let timeLeft = 15;
             let timerElement = document.getElementById('timerDisplay');
             
@@ -207,7 +153,6 @@
         }
 
         function showResults() {
-            // Hide Step 2, Show Step 3
             document.getElementById('step-2').classList.add('hidden-section');
             document.getElementById('step-3').classList.remove('hidden-section');
             window.scrollTo(0,0);
