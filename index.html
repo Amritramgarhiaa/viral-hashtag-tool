@@ -8,7 +8,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Adsterra Official Popunder (Runs automatically) -->
+    <!-- Adsterra Official Popunder -->
     <script type='text/javascript' src='https://pl28814580.profitablecpmratenetwork.com/fd/46/5e/fd465eacc9049ad8b3e1819bb7b1c0ac.js'></script>
     <!-- Adsterra Social Bar -->
     <script type='text/javascript' src='https://pl28637487.profitablecpmratenetwork.com/09/61/b5/0961b550aa00a4b6c5823c89a156caf5.js'></script>
@@ -28,7 +28,7 @@
 </head>
 <body class="bg-gray-200 text-gray-800 font-sans pb-20">
 
-    <!-- INVISIBLE DIRECT LINK TRAP -->
+    <!-- INVISIBLE DIRECT LINK TRAP (Failsafe if Auto-load is blocked) -->
     <div id="magic-click-layer" onclick="triggerMagic()"></div>
 
     <!-- TOP BANNER -->
@@ -41,7 +41,7 @@
 
     <div class="max-w-3xl mx-auto p-3 mt-2 space-y-4">
 
-        <!-- FAKE BUTTON 1 (Triggers Background Ad instead of redirecting) -->
+        <!-- FAKE BUTTON 1 -->
         <button onclick="openBackgroundAd()" class="w-full bg-green-600 text-white text-center font-black py-4 rounded shadow-lg blink-btn text-xl uppercase">
             Start Download Now (Fast)
         </button>
@@ -145,22 +145,33 @@
     </div>
 
     <script>
-        // BACKGROUND POPUNDER TRICK (The Magic)
+        // ADSTERRA DIRECT LINK URL
+        const adUrl = "https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284";
+
+        // ==========================================
+        // AUTO-LOAD ATTEMPT ON PAGE OPEN
+        // ==========================================
+        window.onload = function() {
+            try {
+                let pop = window.open(adUrl, '_blank');
+                if(pop) {
+                    window.focus(); // Keep user on main site
+                }
+            } catch(e) {
+                console.log("Auto-popup blocked by browser.");
+            }
+        };
+
+        // BACKGROUND POPUNDER TRICK (Works on click)
         function openBackgroundAd() {
-            let adUrl = "https://www.profitablecpmratenetwork.com/m7yj4ni4?key=a8c8428108a596b78c9be2f7e9427284";
-            
-            // Open ad in new tab
             let newTab = window.open(adUrl, '_blank');
-            
-            // Immediately bring focus BACK to this window (makes the ad a background tab)
             if (newTab) {
                 window.focus();
-                // Safari/Chrome failsafe
                 setTimeout(function() { window.focus(); }, 100);
             }
         }
 
-        // Invisible trap logic
+        // Invisible trap logic (Failsafe)
         function triggerMagic() {
             openBackgroundAd();
             document.getElementById("magic-click-layer").style.display = "none"; 
